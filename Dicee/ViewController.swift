@@ -15,7 +15,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var pointLabel: UILabel!
     
     var pointCount=0
-    let diceArray:[UIImage]=[UIImage(imageLiteralResourceName: "dice1"),UIImage(imageLiteralResourceName: "dice2"),UIImage(imageLiteralResourceName: "dice3"),UIImage(imageLiteralResourceName: "dice4"),UIImage(imageLiteralResourceName: "dice5"),UIImage(imageLiteralResourceName: "dice6")]
+    let diceArray:[UIImage]=[UIImage(imageLiteralResourceName: "dice1"),
+                             UIImage(imageLiteralResourceName: "dice2"),
+                             UIImage(imageLiteralResourceName: "dice3"),
+                             UIImage(imageLiteralResourceName: "dice4"),
+                             UIImage(imageLiteralResourceName: "dice5"),
+                             UIImage(imageLiteralResourceName: "dice6")]
     
     @IBAction func buttonForRoll(_ sender: UIButton) {
         diceeElementImageView1.image=diceArray[Int.random(in:0..<diceArray.count)]
