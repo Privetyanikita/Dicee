@@ -16,19 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="SIN-4p-ue9">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="SIN-4p-ue9">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="fmW-V4-2YC">
-                                <rect key="frame" x="98" y="161" width="196" height="128"/>
+                                <rect key="frame" x="98.666666666666686" y="362" width="196" height="128"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="fmW-V4-2YC" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="82" id="tfs-gy-qpp"/>
-                            <constraint firstItem="fmW-V4-2YC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="102" id="utb-1t-aQx"/>
+                            <constraint firstItem="SIN-4p-ue9" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="05d-XC-WO0"/>
+                            <constraint firstAttribute="bottom" secondItem="SIN-4p-ue9" secondAttribute="bottom" id="4yd-B2-ilz"/>
+                            <constraint firstItem="SIN-4p-ue9" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="8h9-5l-hPX"/>
+                            <constraint firstItem="SIN-4p-ue9" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Bqk-Ez-sGW"/>
+                            <constraint firstItem="fmW-V4-2YC" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="MT9-bx-iAJ"/>
+                            <constraint firstItem="fmW-V4-2YC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="b8c-d0-ceP"/>
                         </constraints>
                     </view>
                 </viewController>
