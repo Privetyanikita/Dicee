@@ -22,9 +22,20 @@ class ViewController: UIViewController {
                              UIImage(imageLiteralResourceName: "dice5"),
                              UIImage(imageLiteralResourceName: "dice6")]
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        diceeElementImageView1.image=randomDiceElement(diceArray)
+        diceeElementImageView2.image=randomDiceElement(diceArray)
+    }
+    
+    func randomDiceElement(_ arrayImage:[UIImage]) -> UIImage{
+        let randomElement=arrayImage[Int.random(in: 0..<diceArray.count)]
+        return randomElement
+    }
+    
     @IBAction func buttonForRoll(_ sender: UIButton) {
-        diceeElementImageView1.image=diceArray[Int.random(in:0..<diceArray.count)]
-        diceeElementImageView2.image=diceArray[Int.random(in: 0..<diceArray.count)]
+        diceeElementImageView1.image=randomDiceElement(diceArray)
+        diceeElementImageView2.image=randomDiceElement(diceArray)
         if diceeElementImageView1.image==diceeElementImageView2.image{
             pointCount+=1
             pointLabel.text=String(pointCount)
